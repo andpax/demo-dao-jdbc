@@ -35,10 +35,19 @@ public class Program2 {
 			System.out.println(p);
 		}
 		
-		System.out.println("\n===== TEST 3: deapartment insert =====");
-		Department newDep = new Department(null, "Musics");
-		departmentDao.insert(newDep);
-		System.out.println("Inserted! New id = " + newDep.getId());
+		
+//		System.out.println("\n===== TEST 3: deapartment insert =====");
+//		Department newDep = new Department(null, "Musics");
+//		departmentDao.insert(newDep);
+//		System.out.println("Inserted! New id = " + newDep.getId());
+		
+		
+		System.out.println("\n===== TEST 4: department update =====");
+		dep = departmentDao.findById(3);
+		dep.setName("Musical Instruments");
+		departmentDao.update(dep);
+		System.out.println("Update completed!");
+		
 		
 		
 		
