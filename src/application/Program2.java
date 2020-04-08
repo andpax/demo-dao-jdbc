@@ -42,14 +42,18 @@ public class Program2 {
 //		System.out.println("Inserted! New id = " + newDep.getId());
 		
 		
-		System.out.println("\n===== TEST 4: department update =====");
-		dep = departmentDao.findById(3);
-		dep.setName("Musical Instruments");
-		departmentDao.update(dep);
-		System.out.println("Update completed!");
+//		System.out.println("\n===== TEST 4: department update =====");
+//		dep = departmentDao.findById(3);
+//		dep.setName("Musical Instruments");
+//		departmentDao.update(dep);
+//		System.out.println("Update completed!");
 		
 		
-		
+		System.out.println("\n===== TEST 5: department delete =====");
+		System.out.print("Enter id for delete test: ");
+		id = sc.nextInt();
+		departmentDao.deleteById(id);
+		System.out.println("Delete completed!");
 		
 		sc.close();
 	}
